@@ -1,0 +1,26 @@
+
+
+<div class="blog">
+    <section class="hero">
+        <h1>Welcome to XYZ News</h1>
+        <p>Discover the latest updates and stories</p>
+    </section>
+
+    <%- include('./partials/search.ejs') %>
+
+    <section class="posts">
+        <% if (posts && posts.length > 0) { %>
+            <ul class="posts__list">
+                <% posts.forEach(post => { %>
+                    <li class="post">
+                        <h2 class="post__title"><a href="/posts/<%= post.id %>"><%= post.title %></a></h2>
+                        <p class="post__excerpt"><%= post.excerpt %></p>
+                        <a class="post__read-more" href="/posts/<%= post.id %>">Read More</a>
+                    </li>
+                <% }); %>
+            </ul>
+        <% } else { %>
+            <p>No posts to display. Check back later!</p>
+        <% } %>
+    </section>
+</div>

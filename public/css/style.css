@@ -1,0 +1,235 @@
+/* Search Bar Styles */
+.searchBar {
+    background-color: #eaf2f8; /* Soft pastel background for the search bar */
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.searchBar .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.search__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.search__form input[type="search"] {
+    width: 100%;
+    max-width: 600px; /* Limit the width of the search bar */
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 25px; /* Smooth rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.search__form input[type="search"]:focus {
+    border-color: #299ecc; /* Highlighted border color */
+    box-shadow: 0 2px 5px rgba(41, 158, 204, 0.5); /* Focus shadow effect */
+}
+
+.search__form input::placeholder {
+    color: #999; /* Lighter color for placeholder text */
+    font-style: italic;
+} 
+
+
+
+
+  /* General blog styling */
+.blog {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+body {
+    background-color: #f5f7fa; /* A soft light blue-gray */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333; /* A dark gray for text */
+    line-height: 1.6;
+}
+/* Blog Container */
+body.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white; /* Content area with white background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 10px; /* Smooth rounded corners */
+}
+/* Hero section */
+.hero {
+    text-align: center;
+    padding: 20px;
+    background-color: #eaf2f8; /* A very soft pastel blue */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #222; /* Darker text for contrast */
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #555; /* Medium gray for secondary text */
+}
+
+/* Posts section */
+.posts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.posts__list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.post {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.post__title {
+    font-size: 1.5rem;
+    margin: 0 0 10px;
+}
+
+.post__title a {
+    text-decoration: none;
+    color: #299ecc;
+}
+
+.post__title a:hover {
+    text-decoration: underline;
+}
+
+.post__excerpt {
+    font-size: 1rem;
+    color: #555;
+    margin: 0 0 15px;
+}
+
+.post__read-more {
+    color: #299ecc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.post__read-more:hover {
+    text-decoration: underline;
+}
+
+/* profile section*/
+/* Profile Container */
+.profile-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white; /* White background for content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Profile Header */
+.profile-header {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #eaf2f8; /* Soft pastel background */
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.profile-header h1 {
+    font-size: 2rem;
+    color: #222;
+    margin: 0;
+}
+
+/* Profile Info */
+.profile-info {
+    padding: 15px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.profile-info p {
+    margin: 15px 0;
+}
+
+.profile-info .label {
+    font-weight: bold;
+    color: #299ecc; /* Accent color for labels */
+}
+
+/* Profile Button */
+.profile-btn-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile-btn {
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 20px;
+    background-color: #299ecc; /* Button background */
+    color: white;
+    border-radius: 20px;
+    border: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.profile-btn:hover {
+    background-color: #1c83a0; /* Slightly darker on hover */
+}
+
+.profile-btn.logout {
+    background-color: #222; /* Darker color for logout */
+    border-color: #222;
+}
+
+.profile-btn.logout:hover {
+    background-color: #fff;
+    color: #299ecc;
+    border-color: #299ecc;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+    .profile-header h1 {
+        font-size: 2rem;
+    }
+
+    .profile-info {
+        padding: 15px;
+    }
+}
+
+
+/* Footer */
+.footer {
+    background-color: #222;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1rem;
+}

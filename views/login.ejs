@@ -1,0 +1,31 @@
+<head>
+    <link rel="stylesheet" href="/css/login-styles.css">
+</head>
+<section class="auth-form">
+    <h2>Login</h2>
+
+    <!-- Display any login errors (e.g., invalid credentials) -->
+     
+    <% if (errors.length > 0) { %>
+        <div class="errors">
+            <% errors.forEach(function(error) { %>
+                <p class="error"><%= error %></p>
+            <% }); %>
+        </div>
+    <% } %>
+
+    <!-- Login form -->
+    <form action="/login" method="POST">
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required placeholder="Enter your password">
+        </div>
+        <button type="submit">Login</button>
+    </form>
+
+    <p>Don't have an account? <a href="/register">Register here</a></p>
+</section>

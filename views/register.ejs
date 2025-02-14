@@ -1,0 +1,46 @@
+<head>
+    <link rel="stylesheet" href="/css/register-styles.css">
+</head>
+<section class="auth-form">
+    <h2>Register</h2>
+
+    <!-- Display any registration errors (e.g., email already exists) -->
+    <% if (errors.length > 0) { %>
+        <div class="errors">
+            <% errors.forEach(function(error) { %>
+                <p class="error"><%= error %></p>
+            <% }); %>
+        </div>
+    <% } %>
+
+    <!-- Registration form -->
+    <form action="/register" method="POST">
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required placeholder="Enter your username">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required placeholder="Enter your password">
+        </div>
+        
+        <!-- Role Selection -->
+        <div class="form-group">
+            <label for="role">Role:</label>
+            <select id="role" name="role" required>
+                <option value="reader">Reader</option>
+                <option value="author">Author</option>
+                <option value="admin">Admin</option>
+            </select>
+        </div>
+
+
+        <button type="submit">Register</button>
+    </form>
+
+    <p>Already have an account? <a href="/login">Login here</a></p>
+</section>

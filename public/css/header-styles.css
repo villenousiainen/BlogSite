@@ -1,0 +1,82 @@
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #299ecc;
+    padding: 10px 20px;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header__logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.header__logo:hover {
+    text-decoration: underline;
+}
+
+.header__nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.header__nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.header__nav a:hover {
+    color: #222;
+}
+
+/* Header Button Styles */
+.auth-buttons {
+    display: flex;
+    gap: 10px; /* Spacing between the buttons */
+}
+
+.auth-buttons .btn {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 5px 15px;
+    border-radius: 20px; /* Rounded corners for a consistent look */
+    transition: all 0.3s ease;
+    color: #299ecc; /* Button text color */
+    background-color: white; /* Button background matches header theme */
+    border: 2px solid white; /* Subtle border */
+}
+
+.auth-buttons .btn:hover {
+    background-color: #fff; /* Keeps white background */
+    color: #222; /* Matches hover effect with links */
+    border-color: #222; /* Dark border on hover for contrast */
+}
+
+.auth-buttons .btn-login {
+    font-weight: bold; /* Slightly bolder to differentiate */
+}
+
+.auth-buttons .btn-register {
+    background-color: #222; /* Dark button for Register */
+    color: white;
+    border-color: #222;
+}
+
+.auth-buttons .btn-register:hover {
+    background-color: white;
+    color: #299ecc; /* Swap colors on hover for Register */
+    border-color: #299ecc;
+}
+
+

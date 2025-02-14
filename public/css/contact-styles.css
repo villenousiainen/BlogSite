@@ -1,0 +1,107 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7f9;
+    color: #333;
+}
+
+main {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.contact-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-section .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section label {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.contact-section input, 
+.contact-section textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.contact-section input:focus, 
+.contact-section textarea:focus {
+    border-color: #299ecc;
+    box-shadow: 0 0 5px rgba(41, 158, 204, 0.5);
+}
+
+.contact-section textarea {
+    resize: vertical; /* Allow the text area to grow vertically */
+}
+
+.contact-section button {
+    padding: 12px 20px;
+    background-color: #299ecc;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-section button:hover {
+    background-color: #1d7da5;
+}
+
+.contact-section button:focus {
+    outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-section h2 {
+        font-size: 2rem;
+    }
+
+    .contact-section p {
+        font-size: 1rem;
+    }
+
+    .contact-section form {
+        gap: 15px;
+    }
+
+    .contact-section button {
+        padding: 10px 18px;
+        font-size: 1rem;
+    }
+}

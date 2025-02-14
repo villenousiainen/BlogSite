@@ -1,0 +1,42 @@
+<head>
+    <link rel="stylesheet" href="/css/header-styles.css">
+</head>
+
+<div class="header">
+    
+    <div class="homePage">
+        <% if (user && (user.role === 'admin' || user.role === 'author')) { %>
+            <%- include('./writersMenu') %>
+        <% } %>
+        <a href="/" class="header__logo">XYZ News</a>
+    </div>
+    
+
+    <nav class="header__nav">
+        <ul>
+            <li>
+                <a href="/" class="">Home</a>
+            </li>
+            <li>
+                <a href="/about" class="">About</a>
+            </li>
+            <li>
+                <a href="/contact" class="">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <% if (locals.user) { %>
+        <div class="auth-buttons">
+            <a href="/profile" class="btn btn-login">Profile</a>
+            <a href="/logout" class="btn btn-register">Logout</a>
+        </div>
+
+    <% } else { %>
+        <div class="auth-buttons">
+            <a href="/login" class="btn btn-login">Login</a>
+            <a href="/register" class="btn btn-register">Register</a>
+        </div>
+    <% } %>
+    
+</div>
